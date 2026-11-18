@@ -1,11 +1,11 @@
-<!doctype html>
+<!Doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta
-      name="description"
-      content="Anonymous Feedback and Issue Dashboard for Muni University students, staff, quality-assurance teams and management.">
+    <meta name="description" content="Anonymous Feedback and Issue Dashboard for Muni University students, staff, quality-assurance teams and management.">
+      
+      
     <title>Anonymous Feedback and Issue Dashboard</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -18,7 +18,7 @@
           <img
             src="muni-logo.jpeg"
             alt="Muni University Logo"
-            class="brand-logo">
+            class="brand-logo" Loading="lazy">
           <div>
             <p class="brand-title">Feedback &amp; Issue Dashboard</p>
             <p class="brand-sub">ITM 1131 &middot; Group 12</p>
@@ -67,6 +67,7 @@
       </section>
 
       <!-- Section 2: Feedback board -->
+       
       <section id="board" class="panel" aria-labelledby="board-title">
         <h2 id="board-title">Feedback board</h2>
         <p class="lead">
@@ -74,31 +75,29 @@
           numbers are stored or shown.
         </p>
 
-        <form
-          id="filter-form"
-          class="filter-grid"
-          role="search"
-          aria-label="Filter feedback"
-          novalidate>
+        <form id="filter-form" class="filter-grid" role="search" aria-label="Filter feedback"
+         novalidate>
+
           <div class="field field-wide">
             <label for="search">Search feedback</label>
-            <input
-              type="search"
-              id="search"
-              placeholder="e.g. wi-fi, library, hostel">
+            <input type="search" id="search" name="search" placeholder="e.g. wi-fi, library, hostel">
           </div>
+
           <div class="field">
             <label for="filter-category">Category</label>
-            <select id="filter-category"></select>
+            <select id="filter-category" name="category"></select>
           </div>
+
           <div class="field">
             <label for="filter-audience">Audience</label>
-            <select id="filter-audience"></select>
+            <select id="filter-audience" name="audience"></select>
           </div>
+
           <div class="field">
             <label for="filter-status">Status</label>
-            <select id="filter-status"></select>
+            <select id="filter-status" name="status"></select>
           </div>
+
           <div class="field">
             <label for="sort-by">Sort by</label>
             <select id="sort-by">
@@ -108,6 +107,7 @@
               <option value="rating-low">Lowest rating</option>
             </select>
           </div>
+
           <div class="field field-actions">
             <button type="button" id="reset-filters" class="btn btn-secondary">
               Reset filters
@@ -117,12 +117,9 @@
 
         <div class="board-toolbar">
           <p
-            id="result-count"
-            class="result-count"
-            role="status"
-            aria-live="polite"></p>
+            id="result-count" class="result-count" role="status" aria-live="polite"></p>
           <label class="check-inline" for="staff-mode">
-            <input type="checkbox" id="staff-mode">
+            <input type="checkbox" id="staff-mode" aria-describedby="staff-mode-help" name="staff-mode">
             <span>Staff view (allow status updates)</span>
           </label>
         </div>
@@ -142,23 +139,16 @@
           We check your message to protect your identity.
         </p>
 
-        <div
-          id="form-message"
-          class="message"
-          role="status"
-          aria-live="polite"
-          hidden></div>
+        <div id="form-message" class="message" role="status" aria-live="polite" hidden>
+
+        </div>
 
         <form id="feedback-form" class="form-grid" novalidate>
           <div class="field">
             <label for="category"
               >Category <span class="req" aria-hidden="true">*</span></label
             >
-            <select
-              id="category"
-              name="category"
-              required
-              aria-describedby="category-error">
+            <select  id="category"  name="category" required aria-describedby="category-error">
               <option value="">--Select a category--</option>
               <option value="general">General Questions</option>
               <option value="symptoms">Symptoms</option>
@@ -184,12 +174,7 @@
             <label for="message"
               >Your message <span class="req" aria-hidden="true">*</span></label
             >
-            <textarea
-              id="message"
-              rows="5"
-              maxlength="500"
-              required
-              aria-describedby="message-help message-error"
+            <textarea id="message" rows="5" maxlength="500" required aria-describedby="message-help message-error" 
               placeholder="Describe the issue or idea (at least 20 characters)"></textarea>
             <p id="message-help" class="help-text">
               <span id="char-count">0</span> / 500 characters
@@ -219,9 +204,7 @@
                 id="confirm"
                 required
                 aria-describedby="confirm-error">
-              <span
-                >I confirm my message contains no personal information.</span
-              >
+              <span>I confirm my message contains no personal information.</span>
             </label>
             <p class="error-text" id="confirm-error" hidden></p>
           </div>
