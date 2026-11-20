@@ -24,14 +24,6 @@ Students, lecturers, administrative and library staff, quality-assurance teams a
 - Responsive for mobile, tablet and desktop using Flexbox and CSS Grid.
 - Accessible: semantic HTML, labels, skip link, keyboard-friendly controls, focus styles, ARIA live regions.
 
-## Files
-
-| File | Purpose |
-|------|---------|
-| `index.html` | Page structure (three sections: Overview, Feedback board, Submit feedback) |
-| `style.css` | Styles, global `box-sizing: border-box`, Flexbox/Grid layouts, media queries |
-| `script.js` | Sample data, search/filter, calculations, form validation, status updates |
-
 ## Key JavaScript functions
 
 | Function | Requirement it meets |
@@ -42,35 +34,51 @@ Students, lecturers, administrative and library staff, quality-assurance teams a
 | `updateStatus()` | User action: updating an item |
 | `containsPersonalInfo()` | Privacy check used by form validation |
 
-## How to run
-Just open index.html, no server needed. full steps for GitHub pages included.
-
 ## Limitations
 
 - No database, login or server. Feedback you submit is saved only in your own browser (localStorage), so other users cannot see it.
 - The staff view is a demonstration toggle, not real authentication.
 - Personal-information detection is basic and cannot catch every case.
 
-## Testing evidence
-
-Add screenshots here for the three required screen sizes:
-
-- Mobile (about 375px wide)
-- Tablet (about 768px wide)
-- Desktop (1200px or wider)
-
-Also record checks for: search, each filter, sorting, valid submission, invalid submission (empty fields, short message, email in message), status update, and keyboard-only navigation.
-
 ## Team members and responsibilities
 
 | Member | Responsibility |
 |--------|----------------|
-| Member 1 (name) | HTML structure and accessibility |
-| Member 2 (name) | CSS, responsive layout |
-| Member 3 (name) | JavaScript search, filter, sort |
-| Member 4 (name) | JavaScript form validation and summary calculations |
-| Member 5 (name) | Testing, README, deployment |
+| Auma Joy Desire Cephas | HTML structure and accessibility, Deployment |
+| Anguzu Jonathan | CSS, responsive layout |
+| Yikii Aron | JavaScript search, filter, sort |
+| Adroni Sam | JavaScript form validation and summary calculations |
+| All the group members | Testing and README  |
 
 ## Contribution statements
 
-Each member adds a short statement of what they personally did.
+## Auma Joy Desire Cephas.
+I created a GitHub account for the project.
+I prompted and reviewed the HTML structure accessibility features, tested keyboard navigation, validated and fixed errors were necessary and contributed to the report.
+I committed our project to GitHub on behalf of my group members
+I did the deployment
+
+## Anguzu Jonathan
+I prompted and reviewed the CSS responsive layout, tested it on mobile, tablet and desktop and confirmed the layout works. I validated and fixed the errors.
+
+## Yikii Aaron
+I prompted and reviewed the JavaScript form validation, privacy checks and summary calculations, and tested them and validated my codes to make sure there are no errors.
+
+## Adroni Sam
+I prompted and reviewed the JavaScript form validation, privacy checks and summary calculations and tested them
+The Readme and testing were done jointly. Since only one person had a laptop, each member made their contribution but the commitment to GitHub was done by the Anchor.
+
+## AI Use Acknowledgement
+
+Meta AI was used to:
+ Generate the initial code for index.html, style.css and script.js
+ Explain concepts such as deployment, Git/GitHub, testing, and accessibility
+ Help debug errors and suggest fixes
+
+## The team members were responsible for:
+ Giving the prompts and requirements to the AI
+ Reviewing, testing and verifying the generated code
+ Running the application on mobile, tablet and desktop
+ Taking testing screenshots
+
+
